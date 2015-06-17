@@ -178,8 +178,8 @@ init -1 python hide:
 
     ## Sounds that are used when entering and exiting the game menu.
 
-    # config.enter_sound = "click.wav"
-    # config.exit_sound = "click.wav"
+    config.enter_sound = "./sound/sfx/enter.ogg"
+    config.exit_sound = "./sound/sfx/cancel.ogg"
 
     ## A sample sound that can be played to check the sound volume.
 
@@ -187,7 +187,7 @@ init -1 python hide:
 
     ## Music that is played while the user is at the main menu.
 
-    # config.main_menu_music = "main_menu_theme.ogg"
+    #config.main_menu_music = "./sound/music/by-the-waters-of-babylon.ogg"
 
 
     #########################################
