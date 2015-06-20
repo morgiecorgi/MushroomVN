@@ -183,6 +183,7 @@ screen main_menu():
     window:
         style "mm_root"
 
+
     # The main menu buttons.
     frame:
         style_group "mm"
@@ -202,8 +203,6 @@ init -2:
     # Make all the main menu buttons be the same size.
     style mm_button:
         size_group "mm"
-
-
 
 ##############################################################################
 # Navigation

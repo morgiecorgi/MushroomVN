@@ -1,44 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 10, in script
-    init -1 python hide:
-  File "game/options.rpy", line 83, in <module>
-    rounded_window = False,
-  File "renpy/common/00themes.rpy", line 366, in main
-    disabled_text)
-  File "renpy/common/00themes.rpy", line 138, in buttons
-    style.button.background = Box(widget, less_rounded)
-  File "renpy/common/00themes.rpy", line 105, in Box
-    return Frame(theme.OneOrTwoColor(file_prefix + "_box.png", color), 12, 12)
-  File "renpy/common/00themes.rpy", line 99, in OneOrTwoColor
-    return im.Twocolor(image, color, color)
-Exception: Color string must be 3, 4, 6, or 8 hex digits long.
+  File "game/script.rpy", line 7, in script
+    image Fogpart = SnowBlossom("./images/resources/fog.png", count=75, border=50, xspeed=35, yspeed=0, start=5, fast=false, horizontal=True)
+  File "game/script.rpy", line 7, in <module>
+    image Fogpart = SnowBlossom("./images/resources/fog.png", count=75, border=50, xspeed=35, yspeed=0, start=5, fast=false, horizontal=True)
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 10, in script
-    init -1 python hide:
-  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\ast.py", line 785, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\python.py", line 1448, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/options.rpy", line 83, in <module>
-    rounded_window = False,
-  File "renpy/common/00themes.rpy", line 366, in main
-    disabled_text)
-  File "renpy/common/00themes.rpy", line 138, in buttons
-    style.button.background = Box(widget, less_rounded)
-  File "renpy/common/00themes.rpy", line 105, in Box
-    return Frame(theme.OneOrTwoColor(file_prefix + "_box.png", color), 12, 12)
-  File "renpy/common/00themes.rpy", line 99, in OneOrTwoColor
-    return im.Twocolor(image, color, color)
-  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\display\im.py", line 969, in __init__
-    white = renpy.easy.color(white)
-  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\easy.py", line 65, in color
-    raise Exception("Color string must be 3, 4, 6, or 8 hex digits long.")
-Exception: Color string must be 3, 4, 6, or 8 hex digits long.
+  File "game/script.rpy", line 7, in script
+    image Fogpart = SnowBlossom("./images/resources/fog.png", count=75, border=50, xspeed=35, yspeed=0, start=5, fast=false, horizontal=True)
+  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\ast.py", line 875, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Morgan\Downloads\renpy-6.99.4-sdk\renpy\python.py", line 1472, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 7, in <module>
+    image Fogpart = SnowBlossom("./images/resources/fog.png", count=75, border=50, xspeed=35, yspeed=0, start=5, fast=false, horizontal=True)
+NameError: name 'false' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.4.467
