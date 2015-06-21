@@ -28,7 +28,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Mushrooms"
-    config.version = "0.0"
+    config.version = "0.01"
 
     #########################################
     # Themes
@@ -117,7 +117,7 @@ init -1 python hide:
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    style.window.yminimum = 270
+    style.window.yminimum = 180
 
 
     #########################################
@@ -207,34 +207,34 @@ init -1 python hide:
     ## Transitions.
 
     ## Used when entering the game menu from the game.
-    config.enter_transition = None
+    config.enter_transition = Pixellate(.5,5)
 
     ## Used when exiting the game menu to the game.
-    config.exit_transition = None
+    config.exit_transition = Pixellate(.5,5)
 
     ## Used between screens of the game menu.
-    config.intra_transition = None
+    config.intra_transition = Pixellate(.5,5)
 
     ## Used when entering the game menu from the main menu.
-    config.main_game_transition = None
+    config.main_game_transition = Pixellate(.5,5)
 
     ## Used when returning to the main menu from the game.
-    config.game_main_transition = None
+    config.game_main_transition = Pixellate(.5,5)
 
     ## Used when entering the main menu from the splashscreen.
-    config.end_splash_transition = None
+    config.end_splash_transition = Pixellate(.5,5)
 
     ## Used when entering the main menu after the game has ended.
-    config.end_game_transition = None
+    config.end_game_transition = Pixellate(.5,5)
 
     ## Used when a game is loaded.
-    config.after_load_transition = None
+    config.after_load_transition = Pixellate(.5,5)
 
     ## Used when the window is shown.
-    config.window_show_transition = None
+    config.window_show_transition = Pixellate(.5,5)
 
     ## Used when the window is hidden.
-    config.window_hide_transition = None
+    config.window_hide_transition = Pixellate(.5,5)
 
     ## Used when showing NVL-mode text directly after ADV-mode text.
     config.adv_nvl_transition = dissolve
